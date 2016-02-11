@@ -1,0 +1,71 @@
+<html>
+<title> calculator </title>
+<body>
+</head>
+<script type="text/javascript">
+    function doMath() {
+      var operator = document.getElementById('operator').value;
+      var firstNumber = Number(document.getElementById('number1').value);
+      var secondNumber = Number(document.getElementById('number2').value);
+      var outputElement = document.getElementById('value');
+
+      if (operator == 'plus') {
+        outputElement.value = firstNumber + secondNumber;
+      } else if (operator == 'minus') {
+        outputElement.value = firstNumber - secondNumber;
+      } else if (operator == 'multiply') {
+        outputElement.value = firstNumber * secondNumber;
+      } else if (operator == 'divide') {
+        outputElement.value = firstNumber / secondNumber;
+      }
+    }
+  </script>
+  </head>
+<style>
+
+h1 {
+	font-family: "arial";
+    color:orange;
+    text-align: center;
+    font-size:40px;
+}
+
+.form1 { 
+    
+text-align: center;
+}
+
+.functionkeys {
+		font-family: "arial";
+		font-weight: bold;
+		color: gray;
+		font-size: 11pt;
+
+}
+
+</style>
+
+
+
+<h1>Jacob's Calcuator</h1>
+
+
+
+
+<form class=form1>
+
+<input id="number1" type="number"> </input>
+<select name="" id="operator" class=functionkeys>
+  <option value="plus">+</option>
+  <option value="minus">-</option>
+  <option value="multiply">*</option>
+  <option value="divide">/</option>
+</select>
+<input id="number2" type="number">
+<button class=functionkeys onclick="doMath()">=</button>
+<input id="value" type="number" class=functionkeys>
+</input>
+</form>
+
+</body>
+</html>
