@@ -1,0 +1,33 @@
+
+<HTML>
+<HEAD>
+<title>Lab 1 </title> 
+<SCRIPT type="text/javascript">
+function doit()
+{
+
+  alert("document.myform.fname.value is  " 
++ document.myform.fname.value)
+
+
+  alert(greeting + document.myform.fname.value 
++ " " + document.myform.lname.value)
+
+  alert("length of first name " 
++ document.myform.fname.value.length)
+
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="myform" action="">
+  What is your First Name? 
+   <INPUT TYPE="text" NAME="fname" placeholder="Enter your first name here"><p>
+  What is your Last Name? 
+   <INPUT TYPE="text" NAME="lname" placeholder="Enter your last name here"><p>
+   <INPUT TYPE="button" 
+     VALUE="Submit" 
+	 onClick="doit()">
+</FORM>
+</BODY>
+</HTML>
