@@ -62,7 +62,7 @@ text-align: center;
   <option value="divide">/</option>
 </select>
 <input id="number2" type="number">
-<button class=functionkeys onclick="doMath()">=</button>
+<button type="button"class=functionkeys onclick="doMath()">=</button>
 <input id="value" type="number" class=functionkeys>
 </input>
 </form>
